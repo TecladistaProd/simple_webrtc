@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Simple WebRTC</title>
+	<!-- <link rel="stylesheet" href=""> -->
+	<script src="App.js" defer></script>
+</head>
+<body>
+	<main>
+		<a href='#' id="my-peer">Wait</a>
+		<div id="connect">
+			<label>
+				<b>Other Peer</b>
+				<input type="text" id="other-peer"/>
+			</label>
+			<button id="chat-connect">Chat Connect</button>
+			<button id="video-connect">Video Connect</button>
+		</div>
+		<div id="sendfile">
+			<label>
+				<b>Send Message</b>
+				<input type="file" id="file"/>
+			</label>
+			<button>Send File</button>
+			<a href="" id="download"></a>
+		</div>
+		<div id="chat-buttons" hidden>
+			<label>
+				<b>Send Message</b>
+				<input type="text" id="message"/>
+			</label>
+			<button>Send</button>
+		</div>
+		<div class="chat"></div>
+		<video hidden controls id="video"></video>
+	</main>
+</body>
+</html>
